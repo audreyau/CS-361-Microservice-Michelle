@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MOTIMER</title>
+<script src="index.js" charset="utf-8" defer></script>
+<script src="microservice.js" charset="utf-8" defer></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MOTIMER</h1>
+        <h1>motivation/timer</h1>
+        <ul class = "navbar">
+            <li><a href="startpage.html" onClick="return confirm('Leaving this page will delete all your progress. Do you want to leave?')">Go back to starting page</a></li>
+            <li><a href="faq.html" onClick="return confirm('Leaving this page will delete all your progress. Do you want to leave?')">Go to FAQs</a></li>
+            <li><a href="purpose.html" onClick="return confirm('Leaving this page will delete all your progress. Do you want to leave?')">Go to purpose/features page</a></li>
+        </ul>
+    </header>
+
+    <center>
+        <section id = "time-section">
+            <h1><span id = "time"></span></h1>
+        </section>
+
+        <section id = "timer-section">
+            <h2>Timer</h2>
+            <h2><span id = "timer">00:00</span></h2>
+            <input type="text" id = "timerInput" placeholder="Type time here...">
+            <button id="set-timer">Set</button>
+            <button id="reset-timer">Reset</button>
+            <button id="start-timer">Start</button>
+        </section>  
+        
+        <div class = "flex-container">
+            <div>
+                <section id = "image-section">
+                    <img id="randomizedImage" src="./images/pochacco.png" alt="image of choice" width = 400 height = 400 />
+                     <button onclick="getRandomImage()"id="image-button">Randomize Image</button>
+                </section>
+            </div>
+            
+            <div>
+                <section id = "list-section">
+                    <h2>To-Do List</h2>
+                    <input type="text" id="itemInput" placeholder="Type items here...">
+                    <button id="add-list-button">Add</button>
+                    <ul id = "todoList">
+                    </ul>
+                </section> 
+            </div>
+            
+        </div>
+          
+    </center>
+
+
+</body>
+</html>

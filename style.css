@@ -1,0 +1,28 @@
+header {
+    background-color: #add9ff;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+#time {
+    font-size: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.list-sec{
+    text-align: left;
+}
+
+.close {
+    margin-left: 5px;
+}
